@@ -1,0 +1,29 @@
+{
+	"style_sheet": {
+		"voice": {
+			"say_voice": "Polly.Matthew"
+		},
+		"collect": {
+			"validate": {
+				"on_failure": {
+					"messages": [
+						{
+							"say": "I didn't get that. What did you say?"
+						},
+						{
+							"say": "I still didn't catch that. Please repeat."
+						},
+						{
+							"say": "Let's try one last time. Say it again please."
+						}
+					],
+					"repeat_question": false
+				},
+				"on_success": {
+					"say": ""
+				},
+				"max_attempts": 4
+			}
+		}
+	}
+}

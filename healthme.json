@@ -1,0 +1,131 @@
+#sample trigger phrase		Task
+
+#hi there/hello 	--> 	Hola World
+
+
+#---Tasks----
+
+#hola world Task
+{
+	"actions": [
+		{
+			"say": "Hi, how can i help you achieve better health today?"
+		},
+		{
+			"listen": true
+		}
+	]
+}
+
+
+#sample trigger phrase				Task
+
+#my mouth hurts/i feel sick	 --> 	Intent
+
+#Intent Task
+
+{
+	"actions": [
+		{
+			"say": "Sorry to hear that. Do you want to see your primary care doctor or your dentist?"
+		},
+		{
+			"listen": true
+		}
+	]
+}
+
+#sample trigger phrase					Task
+
+#dentist/i want to see my dentist --> dentist lookup
+
+
+#dentist lookup
+
+{
+	"actions": [
+		{
+			"say": "Would you like a dentist near your home or work?"
+		},
+		{
+			"listen": true
+		}
+	]
+}
+
+
+#sample trigger phrase									Task
+# no. i want the best dentist/best dentist in town --> bestdentist
+
+
+#bestdentist
+
+{
+	"actions": [
+		{
+			"say": "Ok. We'll get you the best dentist in town. When are you available?"
+		},
+		{
+			"listen": true
+		}
+	]
+}
+
+
+
+#sample trigger phrase			Task
+#monday/i'm free monday --> 	availability-monday
+
+#availability-monday
+{
+	"actions": [
+		{
+			"say": "The earliest availability is on Monday at nine or ten in the morning. A two o' clock appointment is also available. Which one do you prefer?"
+		},
+		{
+			"listen": true
+		}
+	]
+}
+
+#sample trigger phrase			Task
+#two/two o'clock	--> 		timeofday
+
+#timeofday
+{
+	"actions": [
+		{
+			"say": "Ok. You're booked for two in the afternoon on Monday. I emailed you the confirmation and I'll remind you the day before. Do you need anything else?"
+		},
+		{
+			"listen": true
+		}
+	]
+}
+
+
+#sample trigger phrase			Task
+#no/i'm good 			--> wrap-up
+#wrap-up
+{
+	"actions": [
+		{
+			"say": "Glad I was able to help. let me know if you need anything else"
+		}
+	]
+}
+
+
+
+#sample trigger phrase	Task
+#bye/goodbye	--> 	goodbye
+#goodbye
+{
+	"actions": [
+		{
+			"say": "Ok. I'll be here if you need me again."
+		}
+	]
+}
+
+
